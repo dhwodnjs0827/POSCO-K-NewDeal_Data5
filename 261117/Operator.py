@@ -32,3 +32,25 @@ score = 70
 score = score - 30 # 40
 score -= 30 # 10
 print("score", score) # 10
+
+# ====== 비교, 논리 연산자 ======
+# ==(같다) !=(다르다), > < >= <=
+# and or not
+number1 = 3
+number2 = 5
+
+print(number1 < number2) # Ture
+print(number1 > number2) # False
+print(number1 <= number2) # True
+print(number1 >= number2) # False
+print(number1 == number2) # False
+print(number1 != number2) # True
+print("======")
+print(True and True and True and False) # False
+print(True or True or True or False) # True
+print(not(True or True or True or False)) # False
+print((True or True) and (True or False)) # True
+
+temp = 80
+print(temp > 80 and temp < 100) # Fasle
+print(not(temp > 90)) # True
