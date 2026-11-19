@@ -67,16 +67,22 @@ auth_code = input("인증 코드: ")
 
 condition1 = auth_code.startswith("SEC-")
 print("1번 조건:" + str(condition1))
+
 condition2 = len(auth_code) == 15
 print("2번 조건:" + str(condition2))
+
 condition3 = auth_code[4:8] == "2026"
 print("3번 조건:" + str(condition3))
+
 condition4 = auth_code[len(auth_code) - 1] == 'X' or auth_code[len(auth_code) - 1] == 'Y'
 print("4번 조건:" + str(condition4))
+
 condition5 = int(auth_code[9:13]) >= 1000 and int(auth_code[9:13]) <= 9999
 print("5번 조건:" + str(condition5))
+
 condition6 = auth_code.count('-') == 3
 print("6번 조건:" + str(condition6))
+
 all_condition = (condition1 and condition2 and condition3
                  and condition4 and condition5 and condition6)
 print("모든 조건 만족: " + str(all_condition))

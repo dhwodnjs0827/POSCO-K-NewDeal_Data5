@@ -37,14 +37,3 @@ email_condition2 = email.endswith(".com")
 is_sign_up = (id_condition1 and id_condition2 
               and password_condition1 and password_condition2 and password_condition3 
               and email_condition1 and email_condition2)
-
-# ======
-word = "NORMAL-WARNING-NORMAL-ERROR-WARNING"
-print(word.count("WARNING"))
-print(word.count("NORMAL"))
-print(word.count("ERROR"))
-print(word.find("WARNING"))
-first_warning_index = word.find("WARNING")
-print(word[first_warning_index:].find("WARNING"))
-second_warning_index = word[first_warning_index:].find("WARNING")
-print(second_warning_index - first_warning_index)
