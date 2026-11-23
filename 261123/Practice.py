@@ -29,3 +29,8 @@ for i in data:
         new_data.append(i)
         tot += i
 print(f"{new_data}\n합계: {tot}")
+
+# 4번
+ages = [10, 20, 31, 11, 21, 9, 15]
+adult_list = [age for age in ages if age >= 20]
+child_list = [age for age in ages if age < 20]
