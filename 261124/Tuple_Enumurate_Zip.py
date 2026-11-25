@@ -1,7 +1,7 @@
 # 리스트; 변경 가능하고, 순서보장, 중복적으로 저장할 수 있는 자료 타입
 # 튜플: 데이터를 중복적으로 순서를 보장해서 저장할 수 있는 자료 타입
-list = [10, 20, 10, 10, 10] # 리스트
-tuple = (10, 20, 10, 10, 10) # 튜플
+list = [10, 20, 10, 10, 10]  # 리스트
+tuple = (10, 20, 10, 10, 10)  # 튜플
 print(tuple)
 print(type(list), type(tuple))
 # tuple[0] = 100 # TypeError: 'tuple' object does not support item assignment
@@ -30,21 +30,21 @@ for temp, fah in zip(temps, fahrenheit):
 # 이중 for 문
 for i in range(2):
     for j in range(3):
-        print('*', end=' ')
-    print('\n')
+        print("*", end=" ")
+    print("\n")
 
-for  i   in range(3):
-   for j in range(1,5):
-      print(j, end=' ')
-   print('\n')
+for i in range(3):
+    for j in range(1, 5):
+        print(j, end=" ")
+    print("\n")
 
 for i in range(5, 0, -1):
     for j in range(i):
-        print('*', end = ' ')
-    print('\n') 
+        print("*", end=" ")
+    print("\n")
 
 # 구구단
 for i in range(2, 10):
     for j in range(1, 10):
-        print(f"{i} * {j} = {i * j}", end = '\t')
-    print('\n')
+        print(f"{i} * {j} = {i * j}", end="\t")
+    print("\n")

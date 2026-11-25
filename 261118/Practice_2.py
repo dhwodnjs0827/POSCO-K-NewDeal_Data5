@@ -1,30 +1,30 @@
 # 문자열 검색 종합실습
 word = "NORMAL-WARNING-NORMAL-ERROR-WARNING"
 # 1번
-print(word.count("WARNING")) # 2
+print(word.count("WARNING"))  # 2
 # 2번
-print(word.count("NORMAL")) # 2
+print(word.count("NORMAL"))  # 2
 # 3번
-print(word.count("ERROR")) # 1
+print(word.count("ERROR"))  # 1
 # 4번
-print(word.find("WARNING")) # 7
+print(word.find("WARNING"))  # 7
 # 5번
 first_warning = word.find("WARNING")
 second_warning = word.find("WARNING", first_warning + 1)
-print(second_warning) # 28
+print(second_warning)  # 28
 # 6번
 length = len("WARNING")
-print(len(word[first_warning + length:second_warning])) # 14
+print(len(word[first_warning + length : second_warning]))  # 14
 # 7번
-print(word[first_warning + length:second_warning]) # -NORMAL-ERROR-
+print(word[first_warning + length : second_warning])  # -NORMAL-ERROR-
 # 8번
-substr = word[first_warning + length:second_warning]
-print("ERROR" in substr) # True
+substr = word[first_warning + length : second_warning]
+print("ERROR" in substr)  # True
 
 # 실습1. 사칙연산 계산기
 a = 17
 b = 5
-print(a + b, a - b, a * b, a / b, a % b, a ** b, sep = '·')
+print(a + b, a - b, a * b, a / b, a % b, a**b, sep="·")
 
 # 실습2. 평균과 도형 계산
 x = 3
@@ -60,7 +60,16 @@ temp = 85
 is_temp_normal = temp >= 60 and temp <= 90
 press = 5
 is_press_normal = press >= 3 and press <= 7
-print("온도 정상" + str(is_temp_normal) + '·' + "압력정상" + str(is_press_normal) + '·' + "모두정상" + str(is_temp_normal and is_press_normal))
+print(
+    "온도 정상"
+    + str(is_temp_normal)
+    + "·"
+    + "압력정상"
+    + str(is_press_normal)
+    + "·"
+    + "모두정상"
+    + str(is_temp_normal and is_press_normal)
+)
 
 # 최종 실습
 auth_code = input("인증 코드: ")
@@ -74,15 +83,23 @@ print("2번 조건:" + str(condition2))
 condition3 = auth_code[4:8] == "2026"
 print("3번 조건:" + str(condition3))
 
-condition4 = auth_code[len(auth_code) - 1] == 'X' or auth_code[len(auth_code) - 1] == 'Y'
+condition4 = (
+    auth_code[len(auth_code) - 1] == "X" or auth_code[len(auth_code) - 1] == "Y"
+)
 print("4번 조건:" + str(condition4))
 
 condition5 = int(auth_code[9:13]) >= 1000 and int(auth_code[9:13]) <= 9999
 print("5번 조건:" + str(condition5))
 
-condition6 = auth_code.count('-') == 3
+condition6 = auth_code.count("-") == 3
 print("6번 조건:" + str(condition6))
 
-all_condition = (condition1 and condition2 and condition3
-                 and condition4 and condition5 and condition6)
+all_condition = (
+    condition1
+    and condition2
+    and condition3
+    and condition4
+    and condition5
+    and condition6
+)
 print("모든 조건 만족: " + str(all_condition))

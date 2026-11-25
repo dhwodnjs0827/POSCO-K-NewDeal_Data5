@@ -15,16 +15,16 @@
 # ====== 형변환 ======
 # int(), float(), str()
 print("=== float() 확인 ===")
-print("int -> float", float(25)) # 25.0
-print("정수형 str -> float", float("25")) # 25.0
-print("실수형 str -> float", float("25.5")) #25.5
+print("int -> float", float(25))  # 25.0
+print("정수형 str -> float", float("25"))  # 25.0
+print("실수형 str -> float", float("25.5"))  # 25.5
 print("=== int() 확인 ===")
-print("float -> int", int(25.8)) # 25
-print("정수형 str -> int", int("25")) # 25
+print("float -> int", int(25.8))  # 25
+print("정수형 str -> int", int("25"))  # 25
 # print("실수형 str -> int", int("25.8")) # ValueError
 print("=== str() 확인 ===")
-print("int -> str", str(25)) # "25"
-print("float -> str", str(25.2)) # "25.2"
+print("int -> str", str(25))  # "25"
+print("float -> str", str(25.2))  # "25.2"
 
 # 형변환 입력 같이 써보기!!
 number_A = input("첫 번째 숫자를 입력해주세요")

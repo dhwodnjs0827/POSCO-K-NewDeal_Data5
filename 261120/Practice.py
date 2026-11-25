@@ -13,7 +13,7 @@ else:
 
 # 실습1. 두 번째로 큰 숫자 찾기
 list = input("공백으로 구분하여 정수 5개 입력: ")
-list = list.split(' ')
+list = list.split(" ")
 numbers = [int(list[0]), int(list[1]), int(list[2]), int(list[3]), int(list[4])]
 numbers.sort()
 max = list[-1]
@@ -26,13 +26,13 @@ num2 = float(input("두 번째 숫자 입력: "))
 op = input("연산자 입력: ")
 result = 0.0
 match op:
-    case '+':
+    case "+":
         result = num1 + num2
-    case '-':
+    case "-":
         result = num1 - num2
-    case '*':
+    case "*":
         result = num1 * num2
-    case '/':
+    case "/":
         result = num1 / num2
 print(f"계산 결과: {result}")
 
@@ -50,7 +50,7 @@ else:
 
 # 실습 4. 숫자 5개의 중앙값 찾기
 list = input("숫자 5개 입력: ")
-list = list.split(' ')
+list = list.split(" ")
 numbers = [int(list[0]), int(list[1]), int(list[2]), int(list[3]), int(list[4])]
 numbers.sort()
 print(f"정렬 결과: {numbers}")

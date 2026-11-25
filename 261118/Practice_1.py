@@ -13,4 +13,4 @@ code = "PUMP_A"
 status = "정상"
 date = "2025-01-15"
 print(code + " / " + status + " / " + date)
-print(code, status, date, sep = " / ")
+print(code, status, date, sep=" / ")

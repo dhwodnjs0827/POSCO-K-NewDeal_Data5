@@ -35,12 +35,12 @@ while i <= 10:
     i += 1
 
 for item in range(1, 10):
-   print(item)
-   if item % 3 == 0:
-      break
+    print(item)
+    if item % 3 == 0:
+        break
 
-while True:                # 기본은 계속 반복
+while True:  # 기본은 계속 반복
     x = input("입력 ( q= 종료): ")
-    if x == 'q':           # 종료 신호면
-        break              # 빠져나옴
+    if x == "q":  # 종료 신호면
+        break  # 빠져나옴
     print("입력:", x)

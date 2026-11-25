@@ -15,22 +15,22 @@ print(type(name))
 print(type(is_ok))
 
 # 실습3. 자료형 맞히기 퀴즈
-first = 100 # int
-second = 100.0 # float
-third = "100" # string
+first = 100  # int
+second = 100.0  # float
+third = "100"  # string
 print(type(first))
 print(type(second))
 print(type(third))
 
 # 실습4. 문자열 숫자와 숫자 비교하기
-print(1 + 1) # 2
-print("1" + "1") # 11
+print(1 + 1)  # 2
+print("1" + "1")  # 11
 # print(1 + "1") # TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
 # 실습5. bool 값 만들어 확인하기
-print(3 > 2) # True
-print(5 == 5) # True
-print(type) # <class 'type'>
+print(3 > 2)  # True
+print(5 == 5)  # True
+print(type)  # <class 'type'>
 
 # 실습6. 변수의 자료형 변경하기
 num = 1

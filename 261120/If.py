@@ -1,4 +1,4 @@
-'''
+"""
 if 조건:
     조건이 참일 때 실행될 문장1
     조건이 참일 때 실행될 문장1
@@ -15,7 +15,7 @@ elif 조건2:
     조건1이 거짓이고, 조건2가 참일 때 실행될 문장
 else:
     조건1, 조건2 모두 거짓일 때 실행될 문장
-'''
+"""
 
 score = int(input("점수를 입력해 주세요."))
 if score >= 60:
@@ -89,7 +89,7 @@ match data:
     case [name, temp, "WARNING"]:
         print(f"{name}: 온도 {temp}도, 주의상태입니다.")
     case [name, temp, "NORAML"]:
-            print(f"{name}: 온도 {temp}도, 정상상태입니다.")
+        print(f"{name}: 온도 {temp}도, 정상상태입니다.")
 
 # 실습
 id = input("아이디 입력: ")

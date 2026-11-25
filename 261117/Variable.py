@@ -7,20 +7,20 @@ print(temp)
 print(name)
 
 x = 10
-print("처음 할당 후의 x:",x)
+print("처음 할당 후의 x:", x)
 x = 15
-print("재할당된 후의 x:",x)
+print("재할당된 후의 x:", x)
 
-x = x + 5 # 직전의 x를 연산하여 다시 x에 대입
-print("연산 후의 x:",x)
+x = x + 5  # 직전의 x를 연산하여 다시 x에 대입
+print("연산 후의 x:", x)
 
 ## 변수이름 규칙
 # 숫자로 시작되면 안됨. 특수문자는 언더바(_)만 허용이 됨
 # 파이썬에서는 변수명 규칙을 snake_case를 사용하도록 권장됨
 # 변수명엔 공백이 있을 수 없음
 # 2sensor = 10 -> 숫자부터 시작되면 안됨
-sensor_count = 3 # snake_case, python 변수명 짓기 규칙
-sensorCount = 3 # camelCase, 에러는 아니지만 권장되진 않습니다.
+sensor_count = 3  # snake_case, python 변수명 짓기 규칙
+sensorCount = 3  # camelCase, 에러는 아니지만 권장되진 않습니다.
 print(sensor_count, sensorCount)
 temp2 = 25
 print(temp2)
@@ -31,7 +31,7 @@ temp = 10
 Temp = 100
 print("temp, Temp", temp, Temp)
 
-score = 50,
+score = (50,)
 score = 70
 score = 90
 print("score:", score)
@@ -45,9 +45,9 @@ print("b:", b)
 
 ## 변수 선언 한 줄에 여러 개 하기
 width, height = 4, 3
-print("가로: ",width)
-print("세로: ",height)
-print("직사각형의 넓이: ",width * height)
+print("가로: ", width)
+print("세로: ", height)
+print("직사각형의 넓이: ", width * height)
 
 # x, y = 1, 2, 3 # ValueError: too many values to unpack
 

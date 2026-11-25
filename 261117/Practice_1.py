@@ -47,8 +47,8 @@ score = 90
 print(score)
 
 # 실습8. 주석으로 변수 설명 달기
-temp = 25 # 온도(섭씨)
-count = 3 # 센서 개수
+temp = 25  # 온도(섭씨)
+count = 3  # 센서 개수
 # temp = 100
 print(temp)
 

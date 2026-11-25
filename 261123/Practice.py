@@ -3,11 +3,11 @@ num = int(input("입력값: "))
 tot = 0
 for n in range(1, num + 1):
     tot += n
-    print(n, end = '')
+    print(n, end="")
     if n != num:
-        print('+', end = '')
+        print("+", end="")
     else:
-        print('=', end = '')
+        print("=", end="")
 print(tot)
 
 # 2번

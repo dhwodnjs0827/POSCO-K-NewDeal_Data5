@@ -6,7 +6,7 @@
 
 str = "안녕하세요 만나서 반갑습니다"
 for ch in str:
-    print(ch, end = '')
+    print(ch, end="")
 
 name_list = ["곽현규", "김수진", "김주영", "신승민"]
 for name in name_list:
